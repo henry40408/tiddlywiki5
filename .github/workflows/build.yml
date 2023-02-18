@@ -22,7 +22,17 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Build the Docker image
+    - name: Build the Docker image w/ git tag
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        file: ./Dockerfile
+        platforms: linux/amd64,linux/arm64
+        push: true
+        tags: ghcr.io/henry40408/tiddlywiki5:${GITHUB_REF#refs/tags/}
+      if: startsWith(github.ref, 'refs/tags/')
+
+    - name: Build the Docker image w/o git tag
       uses: docker/build-push-action@v4
       with:
         context: .
@@ -30,3 +40,4 @@ jobs:
         platforms: linux/amd64,linux/arm64
         push: true
         tags: ghcr.io/henry40408/tiddlywiki5:latest
+      if: "!startsWith(github.ref, 'refs/tags/')"
