@@ -29,7 +29,7 @@ jobs:
         file: ./Dockerfile
         platforms: linux/amd64,linux/arm64
         push: true
-        tags: ghcr.io/henry40408/tiddlywiki5:${GITHUB_REF#refs/tags/}
+        tags: "ghcr.io/henry40408/tiddlywiki5:${{ github.ref_name }}"
       if: startsWith(github.ref, 'refs/tags/')
 
     - name: Build the Docker image w/o git tag
