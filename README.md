@@ -16,10 +16,10 @@ This will start a TiddlyWiki server on port 8080, which you can access by naviga
 You can also mount a volume to persist your TiddlyWiki data, like so:
 
 ```sh
-docker run -p 8080:8080 -v /path/to/my/wiki:/app/editions/default ghcr.io/henry40408/tiddlywiki5:latest
+docker run -p 8080:8080 -v $PWD/wiki:/var/lib/tiddlywiki ghcr.io/henry40408/tiddlywiki5:latest
 ```
 
-This will mount the directory `/path/to/my/wiki` on your local machine to the `/app/editions/default` directory inside the Docker container, allowing you to persist your TiddlyWiki data between container runs.
+This will mount the directory `$PWD/wiki` on your local machine to the `/var/lib/tiddlywiki` directory inside the Docker container, allowing you to persist your TiddlyWiki data between container runs.
 
 ## License
 
