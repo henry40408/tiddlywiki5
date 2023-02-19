@@ -1,5 +1,9 @@
 # TiddlyWiki 5 Docker Image
 
+[![Latest Build](https://img.shields.io/github/actions/workflow/status/henry40408/tiddlywiki5/build.yml?branch=main&label=build&logo=docker&logoColor=white)](https://github.com/henry40408/tiddlywiki5/actions/workflows/build-docker-image.yml)
+[![Docker Image Supported Architectures](https://img.shields.io/badge/arch-amd64%20%7C%20arm64-blue?logo=docker&logoColor=white)](https://hub.docker.com/r/myusername/tiddlywiki5)
+[![License](https://img.shields.io/github/license/henry40408/tiddlywiki5)](https://github.com/henry40408/tiddlywiki5/blob/main/LICENSE)
+
 This is a Docker image for running TiddlyWiki 5, a non-linear personal web notebook. The image is built on top of the Node.js runtime and includes the TiddlyWiki server as a dependency.
 
 ## Usage
