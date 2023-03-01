@@ -16,6 +16,8 @@ fi
 if [ -n "${USERNAME-}" ]; then
   listen_params="$listen_params username=$USERNAME"
   listen_params="$listen_params password=${PASSWORD-}"
+elif [ -n "${ANON_USERNAME-}" ]; then
+  listen_params="$listen_params anon-username=$ANON_USERNAME"
 fi
 
 # Start the TiddlyWiki server with the specified username and password
