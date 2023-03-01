@@ -9,14 +9,16 @@ if [ -z "$(ls -A /var/lib/tiddlywiki)" ]; then
 fi
 
 # Set the default username and password if they're not set
-if [ -z "${TW5_USERNAME-}" ]; then
-    export TW5_USERNAME="user"
+listen_params="host=0.0.0.0 port=8080"
+if [ -n "${PATH_PREFIX-}" ]; then
+  listen_params="$listen_params path-prefix=$PATH_PREFIX"
 fi
-
-if [ -z "${TW5_PASSWORD-}" ]; then
-    export TW5_PASSWORD="password"
+if [ -n "${USERNAME-}" ]; then
+  listen_params="$listen_params username=$USERNAME"
+  listen_params="$listen_params password=${PASSWORD-}"
 fi
 
 # Start the TiddlyWiki server with the specified username and password
 echo "Starting TiddlyWiki server..."
-exec npx -s tiddlywiki /var/lib/tiddlywiki --listen host=0.0.0.0 port=8080 username="$TW5_USERNAME" password="$TW5_PASSWORD"
+# shellcheck disable=SC2086
+exec npx -s tiddlywiki /var/lib/tiddlywiki --listen $listen_params
