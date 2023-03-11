@@ -10,14 +10,14 @@ fi
 
 # Set the default username and password if they're not set
 listen_params="host=0.0.0.0 port=8080"
-if [ -n "${PATH_PREFIX-}" ]; then
-  listen_params="$listen_params path-prefix=$PATH_PREFIX"
-fi
 if [ -n "${USERNAME-}" ]; then
   listen_params="$listen_params username=$USERNAME"
   listen_params="$listen_params password=${PASSWORD-}"
 elif [ -n "${ANON_USERNAME-}" ]; then
   listen_params="$listen_params anon-username=$ANON_USERNAME"
+fi
+if [ -n "${EXTRA_PARAMS-}" ]; then
+  listen_params="$listen_params $EXTRA_PARAMS"
 fi
 
 # Start the TiddlyWiki server with the specified username and password
