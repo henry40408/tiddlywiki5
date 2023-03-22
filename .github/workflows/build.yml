@@ -7,23 +7,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3.4.0
 
     - name: Set up QEMU
-      uses: docker/setup-qemu-action@v1
+      uses: docker/setup-qemu-action@v2.1.0
 
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
+      uses: docker/setup-buildx-action@v2.5.0
 
     - name: Log into GitHub Container Registry
-      uses: docker/login-action@v1
+      uses: docker/login-action@v2.1.0
       with:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build the Docker image w/ git tag
-      uses: docker/build-push-action@v4
+      uses: docker/build-push-action@v4.0.0
       with:
         context: .
         file: ./Dockerfile
@@ -33,7 +33,7 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
 
     - name: Build the latest Docker image
-      uses: docker/build-push-action@v4
+      uses: docker/build-push-action@v4.0.0
       with:
         context: .
         file: ./Dockerfile
@@ -43,7 +43,7 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
 
     - name: Build the nightly Docker image
-      uses: docker/build-push-action@v4
+      uses: docker/build-push-action@v4.0.0
       with:
         context: .
         file: ./Dockerfile
