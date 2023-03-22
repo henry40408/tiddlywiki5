@@ -1,6 +1,6 @@
 # TiddlyWiki 5 Docker Image
 
-![TiddlyWiki Version](https://img.shields.io/badge/TiddlyWiki-v5.2.5-blue)
+![TiddlyWiki Version](https://img.shields.io/badge/TiddlyWiki-v5.2.6-blue)
 ![Latest Release](https://img.shields.io/github/v/release/henry40408/tiddlywiki5?label=Latest%20Release)
 [![Latest Build](https://img.shields.io/github/actions/workflow/status/henry40408/tiddlywiki5/build.yml?branch=main&label=build&logo=docker&logoColor=white)](https://github.com/henry40408/tiddlywiki5/actions/workflows/build-docker-image.yml)
 [![Docker Image Supported Architectures](https://img.shields.io/badge/arch-amd64%20%7C%20arm64-blue?logo=docker&logoColor=white)](https://hub.docker.com/r/myusername/tiddlywiki5)

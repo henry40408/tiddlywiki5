@@ -7,7 +7,7 @@ COPY init.sh init.sh
 
 RUN <<EOF
 apk add --no-cache bash
-npm install --global tiddlywiki@5.2.5
+npm install --global tiddlywiki@5.2.6
 EOF
 
 EXPOSE 8080
