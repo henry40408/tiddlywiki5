@@ -28,6 +28,17 @@ docker run -p 8080:8080 -v $PWD/wiki:/var/lib/tiddlywiki ghcr.io/henry40408/tidd
 
 This will mount the directory `$PWD/wiki` on your local machine to the `/var/lib/tiddlywiki` directory inside the Docker container, allowing you to persist your TiddlyWiki data between container runs.
 
+## Environment Variables
+
+The following environment variables are supported in the Dockerfile:
+
+| Variable|Description|Default Value|
+|---|---|---|
+|`USERNAME`|The username to use for TiddlyWiki login.|null|
+|`PASSWORD`|The password to use for TiddlyWiki login.|null|
+|`ANON_USERNAME`|The username to use for anonymous access to TiddlyWiki.|null|
+|`EXTRA_PARAMS`|Additional parameters to pass to the tiddlywiki command.|null|
+
 ## Docker tags
 
 Please note that the Docker image tagged with `latest` is a stable release of TiddlyWiki5, which is updated when a new release is created on GitHub. However, Docker images tagged with `nightly` are built from the latest development code and may not be stable. Use them at your own risk.
