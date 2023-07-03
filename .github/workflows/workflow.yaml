@@ -17,7 +17,6 @@ jobs:
     - uses: docker/build-push-action@v4.0.0
       with:
         context: .
-        file: ./Dockerfile
         platforms: linux/amd64,linux/arm64
         push: true
         tags: ghcr.io/henry40408/tiddlywiki5:nightly
@@ -25,7 +24,6 @@ jobs:
     - uses: docker/build-push-action@v4.0.0
       with:
         context: .
-        file: ./Dockerfile
         platforms: linux/amd64,linux/arm64
         push: true
         tags: "ghcr.io/henry40408/tiddlywiki5:${{ github.ref_name }}"
@@ -33,7 +31,6 @@ jobs:
     - uses: docker/build-push-action@v4.0.0
       with:
         context: .
-        file: ./Dockerfile
         platforms: linux/amd64,linux/arm64
         push: true
         tags: ghcr.io/henry40408/tiddlywiki5:latest
