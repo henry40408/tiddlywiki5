@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "tiddlywiki": "^5.3.1"
+  }
+}

@@ -2,10 +2,10 @@
 
 ![TiddlyWiki Version](https://img.shields.io/badge/TiddlyWiki-v5.3.1-blue)
 ![Latest Release](https://img.shields.io/github/v/release/henry40408/tiddlywiki5?label=Latest%20Release)
-[![Latest Build](https://img.shields.io/github/actions/workflow/status/henry40408/tiddlywiki5/workflow.yaml?branch=main&label=build&logo=docker&logoColor=white)](https://github.com/henry40408/tiddlywiki5/actions/workflows/build-docker-image.yml)
+[![Latest Build](https://img.shields.io/github/actions/workflow/status/henry40408/tiddlywiki5/workflow.yml?branch=main&label=build&logo=docker&logoColor=white)](https://github.com/henry40408/tiddlywiki5/actions/workflows/workflow.yml)
 ![Docker Image Supported Architectures](https://img.shields.io/badge/arch-amd64%20%7C%20arm64-blue?logo=docker&logoColor=white)
 [![License](https://img.shields.io/github/license/henry40408/tiddlywiki5)](https://github.com/henry40408/tiddlywiki5/blob/main/LICENSE)
-![Node.js Version](https://img.shields.io/badge/node-v16.19.1-green?logo=node.js&logoColor=white)
+![Node.js Version](https://img.shields.io/badge/node-v20.7.0-green?logo=node.js&logoColor=white)
 
 This is a Docker image for running TiddlyWiki 5, a non-linear personal web notebook. The image is built on top of the Node.js runtime and includes the TiddlyWiki server as a dependency.
 
