@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/github/license/henry40408/tiddlywiki5)](https://github.com/henry40408/tiddlywiki5/blob/main/LICENSE)
 ![Node.js Version](https://img.shields.io/badge/node-v20.7.0-green?logo=node.js&logoColor=white)
 
-This is a Docker image for running TiddlyWiki 5, a non-linear personal web notebook. The image is built on top of the Node.js runtime and includes the TiddlyWiki server as a dependency.
+This is an unofficial Docker image for running [TiddlyWiki 5](https://tiddlywiki.com/), a non-linear personal web notebook. The image is built on top of the Node.js runtime and includes the TiddlyWiki server as a dependency.
 
 ## Usage
 
@@ -42,6 +42,16 @@ The following environment variables are supported in the Dockerfile:
 ## Docker tags
 
 Please note that the Docker image tagged with `latest` is a stable release of TiddlyWiki5, which is updated when a new release is created on GitHub. However, Docker images tagged with `nightly` are built from the latest development code and may not be stable. Use them at your own risk.
+
+## Special Thanks
+
+I would like to extend my heartfelt gratitude to [Jeremy Ruston](https://github.com/Jermolene), the maintainer of TiddlyWiki. I use TiddlyWiki every day and find it remarkably stable and invaluable in enhancing my productivity. Jeremy’s dedication to maintaining this remarkable piece of software is truly commendable, and I am truly grateful for his ongoing efforts and commitment.
+
+This Docker image I am maintaining is unofficial and has been adapted to run on my Raspberry Pi 4 (arm64). It’s my hope that I can continue to maintain this Docker image with the same level of dedication and longevity as Jeremy has maintained TiddlyWiki.
+
+Lastly, I encourage everyone who loves and benefits from the original TiddlyWiki project to consider supporting it financially. If you find value in what Jeremy and the TiddlyWiki community are creating and wish to see it thrive and evolve, please consider donating via the project's [Open Collective](https://opencollective.com/tiddlywiki).
+
+Thank you to everyone involved in the TiddlyWiki project and the broader community for making such impactful contributions to open-source software.
 
 ## License
 
