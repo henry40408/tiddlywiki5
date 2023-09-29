@@ -3,11 +3,14 @@ FROM node:16.19.1-alpine
 
 WORKDIR /app
 
-COPY init.sh init.sh
+COPY init.sh package-lock.json ./
 
 RUN <<EOF
-apk add --no-cache bash
-npm install --global tiddlywiki@5.3.1
+set -euo pipefail
+apk add --no-cache bash jq
+version="$(jq -r '.packages["node_modules/tiddlywiki"].version' package-lock.json)"
+npm install --global "tiddlywiki@$version"
+apk del jq
 EOF
 
 EXPOSE 8080
