@@ -10,7 +10,7 @@ set -euo pipefail
 apk add --no-cache bash jq
 version="$(jq -r '.packages["node_modules/tiddlywiki"].version' package-lock.json)"
 npm install --global "tiddlywiki@$version"
-apk del jq
+apk del --no-cache jq
 EOF
 
 EXPOSE 8080
