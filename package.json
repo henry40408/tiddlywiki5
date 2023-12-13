@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "tiddlywiki": "^5.3.1"
+    "tiddlywiki": "5.3.2"
   }
 }
