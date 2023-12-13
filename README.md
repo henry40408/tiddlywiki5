@@ -1,6 +1,6 @@
 # TiddlyWiki 5 Docker Image
 
-![TiddlyWiki Version](https://img.shields.io/badge/TiddlyWiki-v5.3.1-blue)
+![TiddlyWiki Version](https://img.shields.io/badge/TiddlyWiki-v5.3.2-blue)
 ![Latest Release](https://img.shields.io/github/v/release/henry40408/tiddlywiki5?label=Latest%20Release)
 [![Latest Build](https://img.shields.io/github/actions/workflow/status/henry40408/tiddlywiki5/workflow.yml?branch=main&label=build&logo=docker&logoColor=white)](https://github.com/henry40408/tiddlywiki5/actions/workflows/workflow.yml)
 ![Docker Image Supported Architectures](https://img.shields.io/badge/arch-amd64%20%7C%20arm64-blue?logo=docker&logoColor=white)
@@ -32,12 +32,12 @@ This will mount the directory `$PWD/wiki` on your local machine to the `/var/lib
 
 The following environment variables are supported in the Dockerfile:
 
-| Variable|Description|Default Value|
-|---|---|---|
-|`USERNAME`|The username to use for TiddlyWiki login.|null|
-|`PASSWORD`|The password to use for TiddlyWiki login.|null|
-|`ANON_USERNAME`|The username to use for anonymous access to TiddlyWiki.|null|
-|`EXTRA_PARAMS`|Additional parameters to pass to the tiddlywiki command.|null|
+| Variable        | Description                                              | Default Value |
+| --------------- | -------------------------------------------------------- | ------------- |
+| `USERNAME`      | The username to use for TiddlyWiki login.                | null          |
+| `PASSWORD`      | The password to use for TiddlyWiki login.                | null          |
+| `ANON_USERNAME` | The username to use for anonymous access to TiddlyWiki.  | null          |
+| `EXTRA_PARAMS`  | Additional parameters to pass to the tiddlywiki command. | null          |
 
 ## Docker tags
 
