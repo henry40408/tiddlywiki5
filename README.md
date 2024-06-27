@@ -4,7 +4,7 @@
 [![Latest Build](https://img.shields.io/github/actions/workflow/status/henry40408/tiddlywiki5/workflow.yml?branch=main&label=build&logo=docker&logoColor=white)](https://github.com/henry40408/tiddlywiki5/actions/workflows/workflow.yml)
 
 [![Casual Maintenance Intended](https://casuallymaintained.tech/badge.svg)](https://casuallymaintained.tech/)
-![TiddlyWiki Version](https://img.shields.io/badge/TiddlyWiki-v5.3.3-blue)
+![TiddlyWiki Version](https://img.shields.io/badge/TiddlyWiki-v5.3.4-blue)
 ![Docker Image Supported Architectures](https://img.shields.io/badge/arch-amd64%20%7C%20arm64-blue?logo=docker&logoColor=white)
 [![License](https://img.shields.io/github/license/henry40408/tiddlywiki5)](https://github.com/henry40408/tiddlywiki5/blob/main/LICENSE)
 ![Node.js Version](https://img.shields.io/badge/node-v20.7.0-green?logo=node.js&logoColor=white)
