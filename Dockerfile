@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.3-labs
-FROM node:20.7.0-alpine
+FROM node:20.20.2-alpine
 
 WORKDIR /app
 
