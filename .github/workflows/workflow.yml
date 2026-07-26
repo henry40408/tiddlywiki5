@@ -38,7 +38,7 @@ jobs:
         images: ghcr.io/henry40408/tiddlywiki5
         tags: |
           type=ref,event=pr
-          type=raw,value=nightly,enable=${{ github.ref_type == 'branch' && github.ref_name == 'main' }}
+          type=raw,value=nightly,enable={{is_default_branch}}
           type=ref,event=tag
     # Single build: push everywhere except PRs, where it only validates the
     # Dockerfile on the host architecture for fast feedback.
