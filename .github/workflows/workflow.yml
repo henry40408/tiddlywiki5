@@ -6,9 +6,12 @@ on:
     tags: ["*"]
   pull_request:
 
+# One run per ref at a time. A newer push supersedes the run it interrupted;
+# a tag does not — a tagged build publishes one specific version and nothing
+# should quietly cancel it.
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ !startsWith(github.ref, 'refs/tags/') }}
 
 jobs:
   build-and-publish:
