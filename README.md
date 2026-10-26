@@ -1,7 +1,7 @@
 # TiddlyWiki 5 Docker Image
 
 ![Latest Release](https://img.shields.io/github/v/release/henry40408/tiddlywiki5?label=Latest%20Release)
-[![Latest Build](https://img.shields.io/github/actions/workflow/status/henry40408/tiddlywiki5/workflow.yml?branch=main&label=build&logo=docker&logoColor=white)](https://github.com/henry40408/tiddlywiki5/actions/workflows/workflow.yml)
+[![Latest Build](https://img.shields.io/github/actions/workflow/status/henry40408/tiddlywiki5/docker.yml?branch=main&label=build&logo=docker&logoColor=white)](https://github.com/henry40408/tiddlywiki5/actions/workflows/docker.yml)
 
 [![Casual Maintenance Intended](https://casuallymaintained.tech/badge.svg)](https://casuallymaintained.tech/)
 ![TiddlyWiki Version](https://img.shields.io/badge/TiddlyWiki-v5.4.1-blue)
